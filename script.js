@@ -10,7 +10,7 @@ const geometry = new THREE.SphereGeometry(5, 64, 64); // Radio 5 y mayor detalle
 const textureLoader = new THREE.TextureLoader();
 let sphere;
 
-textureLoader.load('textura.png', (texture) => {
+textureLoader.load('texture.png', (texture) => {
     const material = new THREE.MeshStandardMaterial({ map: texture }); // Usar MeshStandardMaterial para iluminación
     sphere = new THREE.Mesh(geometry, material);
     scene.add(sphere);
